@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name               = "GoogleAnalyticsSDK"
-  s.version            = "2.0.0"
+  s.version            = "3.0.3"
   s.summary            = "**Unofficial* mirror for the Google Analytics SDK to be used as a submodule on iOS projects."
   s.description        = <<-DESC
                          Mirror for the Google Analytics SDK to be used as a submodule on iOS projects.
@@ -18,13 +18,13 @@ Pod::Spec.new do |s|
   s.license            = "BSD"
   s.author             = { "Andrea Sprega" => "asprega@vendini.com" }
   s.platform           = :ios, "5.0"
-  s.source             = { :git => "https://github.com/asprega/GoogleAnalyticsSDK.git", :tag => 'v2.0.0' }
+  s.source             = { :git => "https://github.com/asprega/GoogleAnalyticsSDK.git", :tag => 'v3.0.3' }
   s.source_files       = "*.{h,m}"
   s.exclude_files      = "Classes/Exclude"
   s.library            = "GoogleAnalytics"
   s.libraries          = "z"
   s.vendored_libraries = "libGoogleAnalytics.a"
   s.requires_arc       = true
-  # s.xcconfig           = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/GoogleAnalyticsSDK"' }
+  # s.xcconfig         = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/GoogleAnalyticsSDK"' }
   # s.xcconfig         = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end
