@@ -23,8 +23,7 @@ Pod::Spec.new do |s|
   s.exclude_files      = "Classes/Exclude"
   s.library            = "GoogleAnalytics"
   s.libraries          = "z"
-  s.vendored_libraries = "libGoogleAnalytics.a"
+  s.vendored_libraries = "libGoogleAnalyticsServices.a"
+  s.frameworks         = "CoreData", "SystemConfiguration" 
   s.requires_arc       = true
-  # s.xcconfig         = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/GoogleAnalyticsSDK"' }
-  # s.xcconfig         = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end
