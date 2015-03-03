@@ -21,8 +21,7 @@ Pod::Spec.new do |s|
   s.source             = { :git => "https://github.com/asprega/GoogleAnalyticsSDK.git", :tag => 'v3.0.3' }
   s.source_files       = "*.{h,m}"
   s.exclude_files      = "Classes/Exclude"
-  s.library            = "GoogleAnalytics"
-  s.libraries          = "z"
+  s.libraries          = "GoogleAnalyticsServices", "z"
   s.vendored_libraries = "libGoogleAnalyticsServices.a"
   s.frameworks         = "CoreData", "SystemConfiguration" 
   s.requires_arc       = true
