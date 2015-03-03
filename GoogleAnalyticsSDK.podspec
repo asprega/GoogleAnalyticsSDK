@@ -23,6 +23,9 @@ Pod::Spec.new do |s|
   s.exclude_files      = "Classes/Exclude"
   s.libraries          = "GoogleAnalyticsServices", "z"
   s.vendored_libraries = "libGoogleAnalyticsServices.a"
+  s.preserve_paths     = "libGoogleAnalyticsServices.a"
+  s.xcconfig           = { "LIBRARY_SEARCH_PATHS" => "$(PODS_ROOT)/GoogleAnalyticsSDK" }
   s.frameworks         = "CoreData", "SystemConfiguration" 
   s.requires_arc       = true
 end
+
